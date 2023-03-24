@@ -7,6 +7,8 @@ const tempElement = document.querySelector(".temperature-value p");
 const descElement = document.querySelector(".temperature-description p");
 const locationElement = document.querySelector(".location p");
 const notificationElement = document.querySelector(".notification");
+const submitElement = document.querySelector("#btn-submit");
+
 
 // App data
 const weather = {};
@@ -77,7 +79,8 @@ function celsiusToFahrenheit(temperature){
 }
 
 // WHEN THE USER CLICKS ON THE TEMPERATURE ELEMENET
-tempElement.addEventListener("click", function(){
+submitElement.addEventListener("click", function(){
+    debugger;
     if(weather.temperature.value === undefined) return;
     
     if(weather.temperature.unit == "celsius"){

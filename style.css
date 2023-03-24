@@ -55,9 +55,13 @@ body{
     height: 128px;
 }
 
-.weather-icon img{
+.weather-icon img, .submit button{
     display: block;
     margin: 0 auto;
+}
+
+.submit{
+margin: 10px auto;
 }
 
 .temperature-value{
